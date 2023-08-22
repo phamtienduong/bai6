@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 100px 2fr 2fr; 
+        grid-template-rows:minmax(50 auto) 200px 300px ;
+
+        padding: 20px;
+    }
+    .grid-item{
+        background-color: rgb(30, 255, 0);
+        border: 1px solid black;
+        
+    }
+   .item5{
+    grid-column: 2/4;
+   } 
+</style>
+<body>
+    <!--
+        grid: giống như hệ thống lưới.
+    -->
+    <div class="container">
+        <div class="grid-item item1">1.Chính quyền Kupyansk thông báo người dân có thể sơ tán đến Kharkov, nơi cách khoảng 90km về phía tây. Tại đây, họ có thể di chuyển đến các khu vực an toàn hơn. Các nhóm được kêu gọi sơ tán gồm trẻ em, người già và bệnh nhân.</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+    </div>
+</body>
+</html>

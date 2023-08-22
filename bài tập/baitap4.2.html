@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 5px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .main_one {
+        text-align: center;
+    }
+
+    .btn {
+        margin: 30px
+    }
+
+    .featured {
+        padding: 40px;
+    }
+
+    footer {
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    @media screen and (max-width:992px) {
+        .featured{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <header class="heading">
+            <h1>Welcom to my portfolio website</h1>
+        </header>
+        <main class="main_one">
+            <nav class="main_two">
+                <div class="Welcom">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button class="btn">View profile</button>
+                </div>
+                <div class="featured">
+                    <h2>Featured Work</h2>
+                    <img src="./bài 6/img/tải xuống (1).jpg" alt="Project">
+                    <img src="./bài 6/img/tải xuống (1).jpg" alt="Project">
+                    <img src="./bài 6/img/tải xuống (1).jpg" alt="Project">
+                    <img src="./bài 6/img/tải xuống (1).jpg" alt="Project">
+
+                   
+                </div>
+                <div class="about">
+                    <h2>About me</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, hic voluptates quaerat odit
+                        ducimus dolor!
+                        Repellat facilis obcaecati pariatur animi!</p>
+                </div>
+            </nav>
+        </main>
+        <footer>
+            <p span class="material-symbols-outlined">
+                copyright>
+                2023 Portfolio Website</p>
+        </footer>
+    </div>
+</body>
+</html>

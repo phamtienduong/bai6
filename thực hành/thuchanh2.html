@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .menu > ul{
+        list-style:none ;
+        padding: 0;
+        margin: 0;
+        width: 1000px;
+        height: 40px;
+        background-color: #333;
+        margin: auto;
+    
+    }
+    .menu > ul > li{
+        display:inline-block;
+        line-height: 40px;
+        padding: 0 20px;
+        float: left;
+        position: relative;
+    }
+    .menu > ul > li:hover{
+        background-color: #111;
+    }
+    .menu > ul > li:hover .cap2{
+        display: block;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .active{
+        background-color: red;
+    }
+    .menu .cap2{
+        list-style: none;
+        width: 200px;
+        height: auto;
+        background-color: blue;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        display: none;
+    }
+    .menu .cap2 li{
+        padding-left: 20px;
+    }
+    .menu .cap2 li:hover{
+        background-color: #111;
+    }
+
+
+</style>
+<body>
+    <div class="menu">
+        <ul class="cap1">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">News
+                <ul class="cap2">
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Social</a></li>
+                    <li><a href="#">Funny</a></li>
+                    <li><a href="#">Histoty</a></li>
+                </ul>
+            </a></li>
+            <li><a href="#">Contact
+                <ul class="cap2">
+                    <li><a href="#">Space</a></li>
+                    <li><a href="#">Table</a></li>
+                    <li><a href="#">Clock</a></li>
+                    <li><a href="#">Paine</a></li>
+                </ul>
+            </a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</body>
+</html>

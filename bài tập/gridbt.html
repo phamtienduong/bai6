@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "section article"
+            "section aside"
+            "section content"
+            "track content"
+        ;
+        grid-template-rows: 250px 200px 200px 200px 200px;
+        color: white;
+
+    }
+
+    .header {
+        grid-area: header;
+        background-image: url(./img/tải\ xuống\ \(2\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .section {
+        grid-area: section;
+        background-color: aqua;
+        background-image: url(./img/tải\ xuống\ \(1\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        
+    }
+    .special{
+        position: relative;
+        top: 500px;
+
+    }
+
+    .article {
+        grid-area: article;
+        background-color: blue;
+        background-image: url(./img/images.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .aside {
+        grid-area: aside;
+        background-color: blueviolet;
+        background-image: url(./img/images\ \(1\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .content {
+        grid-area: content;
+        background-color: chartreuse;
+        background-image: url(./img/tải\ xuống\ \(2\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+    }
+    .sign{
+        position: relative;
+        top: 20px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 330px;
+    }
+    .track {
+        grid-area: track;
+        background-color: chocolate;
+        background-image: url(./img/images\ \(3\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+    }
+    .discover{
+        position: relative;
+        top: 80px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>We like balloons</h1>
+            <p>You can find all kinds of balloon related things here.</p>
+        </div>
+        <div class="section">
+            <div class="special">
+                <h1>Special Shapes</h1>
+            <p>Why are some of them so scary looking?</p>
+            </div>
+        </div>
+        <div class="article">
+            <h1>Angry people at balloon fiestas</h1>
+            <p>Hot air balloons. A bit weather sensitive.</p>
+        </div>
+        <div class="aside">
+            <h1>Balloon photos</h1>
+            <p>I have quite a few</p>
+        </div>
+        <div class="content">
+            <div class="sign">
+            <p>Sign up for more information about balloons</p>
+            </div>
+            <div class="text">
+            <input type="submit" value="Sign me up!">
+            </div>
+        </div>
+        <div class="track">
+            <div class="discover">
+                <h1>10 things you discover when taking a balloon ride.</h1>
+                <p>Number 8 will AMAZE you</p>
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
